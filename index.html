@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minha primeira página</title>
+        <meta charset="utf-8"/>
+        <link href="css/style.css" rel="stylesheet"/>
+        <style>
+            body{
+                background-color: #902;
+                color: #092;
+            }
+        </style>
+    </head>
+    <body onload="window.alert('Bem vindo à Home!');">
+        <header>
+            <h1 align="center">Minha primeira página</h1><br>
+            <a href="https://sc.senai.br/">Vamos ao Senai SC</a><br>
+            <a href="pages/index3Contato.html">Contatar Suporte</a><br>
+
+            <a href="#texto">Texto</a>
+            <a href="#form">Formulário</a>
+            <a href="#lista">Lista</a>
+
+        </header>
+
+        <section id="texto">
+            <p class="txt_padrao">Eu tinha um Nintendo, Mario World, Mario Kart, até que virei macho e comprei Mortal Kombat.
+                <a href="#lista"> Ir para a Lista</a>
+            </p>
+
+            <a href="#lista"> Ir para a Lista</a>
+
+            <p class="txt_padrao">Escolhi o Liu Kang, soltei fogo pela mão, depois foi o Kung Lao, lançador de chapelão. A Sonya é mulher, se eu escolho pega mal, prefiro, então, o Scorpion, sua cobra fode geral. Tinha o Rayden e seus raios, era ruim, me deu trauma, prefiro o Shang Tsung, o tal do roubador de alma. O Jax é um negão, que faz a terra tremer, Johnny Cage viadinho, nas suas bolas vai bater. Depois de muito tempo, descobri qual é que eu quero, então desde pequeno, escolho sempre o Sub-Zero. 
+                <a href="#lista"> Ir para a Lista</a>
+            </p>
+
+            <img src="Index3Imagem.jpg" alt="Imagem Local" width="300px" height="300px"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmqpg1AzOrhIQpX9yBJhHDDsjTY53pFo70rA&usqp=CAU" width="300px" height="300px"/>
+        </section>
+
+        <section>
+            
+            <video width="500" controls autoplay poster="Index3Imagem.jpg">
+                <source src="Index3Video.mp4">
+                <p>Seu Navegador não é compatível</p>
+            </video>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VV2y21GjZ8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </section>
+
+
+        <section id="form">
+
+            <form action="contato.php" method="post">
+                <label for="nome">Nome</label><br>
+                <input type="text" placeholder="Insira seu nome" name="nome"><br><br>
+                <label for="senha">Senha</label><br>
+                <input type="passsword" placeholder="Imsira seu nome" nome="senha">
+                <label for="país">País</label><br>
+                <select>
+                    <option value="BR">Brasil</option>
+                    <option value="AR>">Argentina</option>
+                </select>
+    
+                <input type="submit" value="Enviar">
+    
+            </form>
+
+        </section>
+
+        <section id="lista">
+            <ol type="I">
+                <li>Item da lista</li>
+                <li><ul type="square">
+                    <li>Item da lista</li>
+                    <li>Item da lista</li>
+                    <li>Item da lista</li>
+                </ul>
+                </li>
+                <li>Item da lista</li>
+            </ol>
+        </section>
+     
+        <footer>
+            Todos <strong> direitos </strong> Reservados
+        </footer>
+    </body>
+</html>
+
+<!--
+    https://i.scdn.co/image/ab67616d0000b273ea237b3dd6f0951f6ca37161
+-->
